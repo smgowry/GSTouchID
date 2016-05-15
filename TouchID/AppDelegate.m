@@ -21,6 +21,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [[UINavigationBar appearance]setBarTintColor:[UIColor colorWithRed:95.0/255.0 green:219.0/255.0 blue:208.0/255.0 alpha:1.0f]];
+    [[UIToolbar appearance]setBarTintColor:[UIColor colorWithRed:95.0/255.0 green:219.0/255.0 blue:208.0/255.0 alpha:1.0f]];
+    [[UIToolbar appearance]setTranslucent:NO];
+    
     if ( [[NSUserDefaults standardUserDefaults]valueForKey:@"TouchIDEntrolled"]) {
         [self evaluatePolicy];
     }
